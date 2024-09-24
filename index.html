@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #000 ;/* Dark background for high contrast */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500%;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            font-size: 50px;
+            text-shadow: 0 0 10px red, 0 0 20px blue; /* Glowing text */
+        }
+
+        .lumino-card {
+            background-color: yellowgreen;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.5); /* Glowing box shadow */
+            transition: box-shadow 0.4s ease;
+        }
+        .lumino-card:hover {
+            box-shadow: 0 0 40px rgba(0, 255, 204, 0.8); /* Stronger glow on hover */
+        }
+        .lumino-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            background-color: #00ffcc;
+            color: #000;
+            cursor: pointer;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+        }
+
+        .lumino-button:hover {
+            background-color: wheat;
+            box-shadow: 0 0 30px #00ffcc, 0 0 50px #00ffcc; /* More glow on hover */
+        }
+        p {
+            font-size: 18px;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1> Lumino</h1>
+        <div class="lumino-card">
+            <p>This is a glowing card with some text inside. It showcases the Lumino effect with a subtle glow.</p>
+            <button class="lumino-button">Click Me</button>
+        </div>
+    </div>
+
+</body>
+</html>
